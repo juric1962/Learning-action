@@ -16,6 +16,8 @@ on:
         description: Include 🎉🤣 emojis
       environment:
         type: environment
+          - DATA1
+          - ABRACA
 
 jobs:
   greet:
