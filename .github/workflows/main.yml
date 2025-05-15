@@ -40,9 +40,9 @@ jobs:
       run: echo  The tags are ${{ github.event.inputs.environment }}
     - name: Set color
       id: color-selector
-      run: echo "SELECTED_COLOR=red" >> "$GITHUB_OUTPUT"
+      run: echo "SELECTED_COLOR=yellow" >> "$GITHUB_OUTPUT"
     - name: Get color
       env:
         SELECTED_COL: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
-      run: echo "The selected color is $SELECTED_COL :blush: "
+      run: echo "The selected color is $SELECTED_COL"
 
