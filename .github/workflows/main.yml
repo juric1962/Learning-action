@@ -15,9 +15,9 @@ on:
         type: boolean
         description: Include 🎉🤣 emojis
       environment:
+        description: 'Environment to run tests against'
         type: environment
-          - DATA1
-          - ABRACA
+        required: true
 
 jobs:
   greet:
