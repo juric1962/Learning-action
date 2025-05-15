@@ -16,7 +16,11 @@ on:
         description: Include 🎉🤣 emojis
       environment:
         type: environment
-         - DARA
+         - dara
+         - para
+        
+        
+        
           
         
         
