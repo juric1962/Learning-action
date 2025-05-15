@@ -24,3 +24,7 @@ jobs:
     steps:
     - name: Send greeting
       run: echo "${{ github.event.inputs.message }} ${{ fromJSON('["", "🥳"]')[github.event.inputs.use-emoji == 'true'] }} ${{ github.event.inputs.name }}"
+    - name: Store build timestamp
+      run: echo "BUILD_TIME=$(date +'%T')" >> $GITHUB_ENV
+    - name: Deploy using stored timestamp
+      run: echo "Deploying at $BUILD_TIME"
