@@ -29,4 +29,4 @@ jobs:
     - name: Deploy using stored timestamp
       run: echo "Deploying at $BUILD_TIME"
     - name: Print the input tag to environment
-      run: echo  The tags are ${{ inputs.environment }} 
+      run: echo  The tags are ${{ github.event.inputs.environment }} 
