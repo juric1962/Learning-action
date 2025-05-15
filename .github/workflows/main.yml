@@ -44,5 +44,5 @@ jobs:
     - name: Get color
       env:
         SELECTED_COL: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
-      run: echo "The selected color is $SELECTED_COL"
+      run: echo "The selected color is $SELECTED_COL :blush:"
 
